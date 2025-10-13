@@ -5,21 +5,21 @@
 class Sshm < Formula
   desc "A modern SSH connection manager for your terminal"
   homepage "https://github.com/Gu1llaum-3/sshm"
-  version "1.8.0"
+  version "1.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Gu1llaum-3/sshm/releases/download/1.8.0/sshm_Darwin_x86_64.tar.gz"
-      sha256 "448a0daf296bf89a9f05a9e95e4b981539fdb0a9501cf43cf2417c56dfe1bf55"
+      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.9.0/sshm_Darwin_x86_64.tar.gz"
+      sha256 "a31556bf3785ed616802809d1de2aa95e03404afc1a7790f757d345d57d87820"
 
       def install
         bin.install "sshm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Gu1llaum-3/sshm/releases/download/1.8.0/sshm_Darwin_arm64.tar.gz"
-      sha256 "632f030448e1fb6c6ad764b7b2faac2938fbd835dd6827ae1fc857a05e74543e"
+      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.9.0/sshm_Darwin_arm64.tar.gz"
+      sha256 "f24c7b780981005d7800737fb477934416df98ebb3b92c0671ac926e1df5f6d3"
 
       def install
         bin.install "sshm"
@@ -29,22 +29,22 @@ class Sshm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gu1llaum-3/sshm/releases/download/1.8.0/sshm_Linux_x86_64.tar.gz"
-      sha256 "0d66eb5fb5cc792be11c083a57452244f1b71e05fdc8ab2d0d46ae61f4f209d6"
+      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.9.0/sshm_Linux_x86_64.tar.gz"
+      sha256 "fc5817ec908e7d469bb6615fe9a53df6e2a81c26286d0311d40c967e218aed73"
       def install
         bin.install "sshm"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/Gu1llaum-3/sshm/releases/download/1.8.0/sshm_Linux_armv6.tar.gz"
-      sha256 "6a084970d0774060187d7e8e49531eb84e7cacfcd6b22b8bd6bc066bdf920439"
+      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.9.0/sshm_Linux_armv6.tar.gz"
+      sha256 "8a7d08b00da7a0cfb02f7ce2f03e5154529b4249cb561051a4d1ce2fd196f544"
       def install
         bin.install "sshm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gu1llaum-3/sshm/releases/download/1.8.0/sshm_Linux_arm64.tar.gz"
-      sha256 "7e9bae4cf958d31b7c7d1ac50d09a8b05a6d1eb38e5d117c56509bb610da80f4"
+      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.9.0/sshm_Linux_arm64.tar.gz"
+      sha256 "8399555f8d7da5e0574feb9c234f6a9a2d7e54177455ebfd9435f619e0776af2"
       def install
         bin.install "sshm"
       end
