@@ -5,21 +5,21 @@
 class Sshm < Formula
   desc "A modern SSH connection manager for your terminal"
   homepage "https://github.com/Gu1llaum-3/sshm"
-  version "1.11.0"
+  version "1.12.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.11.0/sshm_Darwin_x86_64.tar.gz"
-      sha256 "1f49e7da8d78c48840d64c3ab80418a6e3a3247a1260ccff1f5aef47544f469e"
+      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.12.0/sshm_Darwin_x86_64.tar.gz"
+      sha256 "69b5c7e6039a7b18e3b0236fc606970bf5996ef6d59c5c5604cbe2d476e58a6a"
 
       define_method(:install) do
         bin.install "sshm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.11.0/sshm_Darwin_arm64.tar.gz"
-      sha256 "c806c0646f5ce07583e2fc49d6efec9ffb0e3363279f60f98254463d2bddb136"
+      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.12.0/sshm_Darwin_arm64.tar.gz"
+      sha256 "d16f3362cb5bb10788ef95086991ace5c106918d1f9ce644ad1422457285124e"
 
       define_method(:install) do
         bin.install "sshm"
@@ -29,22 +29,22 @@ class Sshm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.11.0/sshm_Linux_x86_64.tar.gz"
-      sha256 "8fbec778c28a403a4e8c43f58c476dfa09b66297df8429982ec79503b4cefa37"
+      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.12.0/sshm_Linux_x86_64.tar.gz"
+      sha256 "1eda670c604ffaa3611dc335be63d69acb6b3ca4600dd56aeef707d933258f13"
       define_method(:install) do
         bin.install "sshm"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.11.0/sshm_Linux_armv6.tar.gz"
-      sha256 "6e9c833e5cd0d62faa84b3f7e2027635426070b1984d0466ac7cd1787e9115f7"
+      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.12.0/sshm_Linux_armv6.tar.gz"
+      sha256 "88eec2c880e2682f12858a0640bf41319f406c2e258eacd9cfd88033a5a83eaa"
       define_method(:install) do
         bin.install "sshm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.11.0/sshm_Linux_arm64.tar.gz"
-      sha256 "fd57bdfba1da4a15cfd9d9846f3688e240376a0f5991fd412119f96e091183f2"
+      url "https://github.com/Gu1llaum-3/sshm/releases/download/v1.12.0/sshm_Linux_arm64.tar.gz"
+      sha256 "88336a74277e1511cdfce30fe297101e289d4c5a21a018d453c3171f1181372d"
       define_method(:install) do
         bin.install "sshm"
       end
